@@ -35,7 +35,7 @@ function App() {
             console.log("проблема с отправкой сообщения на сервер")
         }
         try {
-            const {data} = await axios.get(`/room?roomID=${userData.roomID}`)  // запрашиваем данные по пользоватаелям и сообщениям в выбранной комнате
+            const {data} = await axios.get(`/get/room?id_room=${userData.roomID}`)  // запрашиваем данные по пользоватаелям и сообщениям в выбранной комнате
             // data = {users: [], messages: []}
             dispatch({
                 type: 'SET_DATA',

@@ -18,7 +18,7 @@ class ControllerHTTP {
 
     getUsersAndMessageForRoom(req, res) {
         try {
-            const roomID = req.query.roomID
+            const roomID = req.query.id_room
             let obj = null
             if (Database.isRoomInDB(roomID)) {
                 obj = {

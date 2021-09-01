@@ -7,6 +7,8 @@ import Database from './database.js'
 import router from "./router.js"
 import path from 'path'
 
+
+
 const PORT = config.get('port') || 5000
 
 
@@ -20,9 +22,10 @@ app.use(express.urlencoded({extended: true}))
 
 
 
+
 //--- PRODUCTION ---//
 
-const PROD = false
+const PROD = true
 
 if (PROD === true) {
     const dirname = path.resolve()

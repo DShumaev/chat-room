@@ -6,7 +6,7 @@ const router = Router()
 
 
 router.post('/room', ControllerHTTP.joinedToRoom)
-router.get('/room', ControllerHTTP.getUsersAndMessageForRoom)
+router.get('/get/room', ControllerHTTP.getUsersAndMessageForRoom)
 
 
 export default router

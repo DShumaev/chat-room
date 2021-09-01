@@ -5,7 +5,6 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "prod": "node ./index.js",
     "dev": "nodemon ./index.js"
   },
   "author": "DShum",
